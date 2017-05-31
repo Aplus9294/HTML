@@ -3,7 +3,7 @@
 
 	<head>
 		<title>应用DIV制作下拉菜单导航条</title>
-		<meta charset=gb2312">
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 		<style type="text/css">
 			.menubar {
 				position: absolute;
@@ -37,8 +37,10 @@
 			.menu A:hover {
 				color: #FFFFFF;
 			}
+			table{
+			width:400}
 		</style>
-		<script language="javascript">
+		<script>
 			function divControl(show) { //判断是否显示相对应的下拉列表
 				window.event.cancelBubble = true;
 				var objID = event.srcElement.id;
@@ -85,7 +87,7 @@
 
 	<body>
 
-		<table width="400" border="0" align="center" cellpadding="0" cellspacing="0" style="font-size:15px">
+		<table style="font-size:15px;margin:auto;">
 			<tr>
 				<td width="20%">
 					<div align="center" id="Tdiv_1" class="menubar" onmouseover="divControl(1)" onmouseout="divControl(0)">
